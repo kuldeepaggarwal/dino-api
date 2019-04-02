@@ -6,7 +6,7 @@ module Dino
       attr_reader :client, :options
       def initialize(client: Dino::Clients::Cache.new, options: {})
         @client = client
-        options = options
+        @options = options
       end
 
       def fetch_data(path)
