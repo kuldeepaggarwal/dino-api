@@ -20,7 +20,7 @@ module Dino
       private
 
         def response
-          @response ||= fetch_data('news')
+          @response ||= fetch_data(options[:path] || 'news')
         end
     end
   end

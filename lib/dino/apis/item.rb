@@ -12,7 +12,7 @@ module Dino
       end
 
       def load
-        Models::Item.new(fetch_data("news/#{id}")['Item'])
+        Models::Item.new(fetch_data(options[:path] || "news/#{id}")['Item'])
       end
     end
   end
